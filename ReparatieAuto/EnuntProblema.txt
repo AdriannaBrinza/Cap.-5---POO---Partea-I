@@ -1,0 +1,46 @@
+Creati un proiect cu titlul ReparatieAuto in care se cere sa se implementeze urmatoarele cerinte:
+1. Veti avea pachetul de baza com.itfactory
+2. In pachetul de baza com.itfactory veti crea un pachet numit "componente"
+
+Clase pe care va trebui sa le creati in pachetul componente: clasa Motor si clasa CutieDeViteze
+1.Clasa Motor cu proprietatile: marcaProductie (numele marcii de productie), capacitateMotor, pretDeVanzare. Va trebui sa definiti voi corect tipurile
+de date.
+2.Clasa CutieDeViteze cu proprietatile: marcaProductie (numele marcii de productie), pretVanzare, automata (Va trebui sa folositi un tip de data simplu
+care sa ateste daca cutia este automata sau nu).
+
+3. Clasa Reparatie care va fi creata in pachetul com.itfactory
+Clasa Reparatie va avea ca proprietati: marcaProductie, costReparatie, Motor, CutieDeViteze.
+Se vor crea constructori (Daca o sa implementati constructor cu parametri, nu va fie nevoie de setters si getters)
+In clasa Reparatie se va crea o metoda care va verifica daca marca de productie este aceeasi cu cea a motorului (Se va returna valoarea daca este egal
+sau nu. Atentie la verificarea egalitatii)
+In clasa Reparatie se va crea o metoda care va verifica daca marca de productie este aceeasi cu cea a cutiei de viteze
+(Se va returna valoarea daca este egal sau nu. Atentie la verificarea egalitatii)
+
+4. Se va crea o metoda main in pachetul com.itfactory in care se va crea un obiect de tipul clasei Reparatie, de asemenea si pentru
+Motor / Cutie de viteze care vor fi parte din obiectul clasei Reparatie.
+
+Cerintele programului:
+1. Daca marcaDeProductie este aceeasi cu a motorului si a cutiei de viteze, sa se calculeze costul de reparatie.
+2. Daca cutia de viteze este automata, se va adauga la pretul final valoarea de 2150.75
+3. Daca marca de productie nu este aceeasi cu a motorului si a cutiei de viteze afisati un mesaj: "Costul de productie nu poate fi stabilit.
+Componente gresite"
+
+
+ATENTE: Toate metodele create vor returna valorile calculate dupa caz.
+Se va crea o clasa Main unde va fi metoda main. In acea metoda main din clasa Main veti instantia obiectele cerute si veti folosi obiectele
+pentru a calcula, dupa caz cerinetele.
+Se vor afisa tot in metoda main din clasa Main.
+
+Aditional:
+Sa se implementeze in clasa Reparatie urmatoarea metoda:
+Calcul impozit auto. Metoda va primi ca parametru un numar de tip int ce va reprezenta durata (in ani) pe care se face plata.
+->Daca plata se face pe 1 an nu se va aplica niciun discount. Daca plata se face pe 2 ani se va aplica un discount de 10%. Daca plata se face pe 3 ani
+sau mai mult se va aplica un discount de 20%
+->Daca capacitatea motorului este mai mica decat 2000 (cm cubi). Se va calcula impozitul dupa urmatoarea formula:
+impozit = 0.75 * capacitate motor
+->Daca capacitatea motorului este intre 2000 si 2600 (cm cubi). Se va calcula impozitul dupa urmatoarea formula:
+impozit = 1.25 * capacitate motor
+->Daca capacitatea motorului este intre 2600 si 3200 (cm cubi). Se va calcula impozitul dupa urmatoarea formula:
+impozit = 0.9 * capacitate motor
+->Daca capacitatea motorului este mai mare decat 3200 cubi impozitul va fi valoarea capacitatii.
+!!! La impozit se va aplica discountul aferent!!!
